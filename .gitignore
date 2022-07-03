@@ -1,5 +1,5 @@
 **/*.exe
 **/node_modules
-public/assets
+**/public/assets
 package-lock.json
 .vscode

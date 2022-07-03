@@ -6,7 +6,7 @@ module.exports = (env) => {
     let common = {
         entry: './src/index.tsx',
         output: {
-            path: path.join(__dirname, 'public', 'assets'),
+            path: path.join(__dirname, '..', 'server', 'public', 'assets'),
             filename: 'bundle.js'
         },
         module: {
