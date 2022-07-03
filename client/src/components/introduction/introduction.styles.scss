@@ -1,0 +1,131 @@
+/* about me */
+
+.section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10%;
+}
+
+@media (min-width: 992px) {
+    .section {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
+
+.emphatic {
+    font-size: 50px;
+    color: var(--primary-theme);
+}
+
+div.emphatic {
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .emphatic {
+        font-size: 40px;
+    }
+    div.emphatic {
+        text-align: left;
+    }
+
+}
+
+.section > div[class*=' half-section'],
+.section > div[class^='half-section'],
+.section >* div[class*=' half-section'],
+.section >* div[class^='half-section'] {
+    line-height: 35px;
+}
+
+@media (min-width: 992px) {
+    .section > div[class*=' half-section'],
+    .section > div[class^='half-section'],
+    .section >* div[class*=' half-section'],
+    .section >* div[class^='half-section'] {
+        text-align: left;
+        line-height: 28px;
+    }
+
+    .section > .half-section-left,
+    .section >* .half-section-left {
+        padding-right: 5%;
+    }
+
+    .section > .half-section-right,
+    .section >* .half-section-right {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .work-section {
+        margin-top: 10%;
+    }
+}
+
+.work-item {
+    margin-top: 7%;
+    position: relative;
+}
+
+.work-item > img {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 3%;
+}
+
+@media (max-width: 992px) {
+    .work-item > img {
+        display: none!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .work-item > div {
+        margin-left: 30px;
+    }
+
+}
+
+.position {
+    line-height: initial;
+    font-size: 25px;
+    color: var(--primary-theme);
+}
+
+@media (max-width:992px) {
+    .position {
+        font-size: 35px;
+    }
+}
+
+button {
+    background: transparent;
+    border-radius: 0;
+    z-index: 10;
+}
+
+button.black {
+    border: 3px solid black;
+    color: black;
+}
+
+button.white {
+    border: 3px solid white;
+    color: white;
+}
+
+button:hover {
+    border-color: var(--primary-theme);
+    color: var(--primary-theme);
+}
+
+button:focus {
+    outline: none;
+}

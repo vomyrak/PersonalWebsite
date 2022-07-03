@@ -1,0 +1,14 @@
+/* projects */
+
+img.section-image {
+    height: auto;
+    width: 100%;
+    object-fit: scale-down;
+    z-index: 0;
+}
+
+@media (max-width: 992px) {
+    #music-play {
+        display: none!important;
+    }
+}

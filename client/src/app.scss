@@ -1,0 +1,98 @@
+:root {
+    --clear-colour: rgba(255, 255, 255, 1);
+    --variant-colour: rgba(235, 235, 235, 1);
+    --variant-bg-active-colour: white;
+    --variant-bg-hover-colour: rgba(255, 255, 255, 0.8);
+    --variant-bg-non-active-colour: rgba(255, 255, 255, 0.6);
+    --primary-theme: rgb(40, 122, 170);
+    --secondary-theme: rgb(97, 155, 182);
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    :root {
+        font-size: 30px;
+    }
+}
+
+.clear-bg {
+    background: var(--clear-colour);
+}
+
+.variant-bg {
+    background: var(--variant-colour);
+}
+
+body{
+    font-family: "europa", "lora", "Candara", sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* title image */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact form */
+
+#contact_me {
+    position: relative;
+}
+
+#contact_me > div {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+
+input,
+textarea {
+    background: transparent;
+    border: 3px solid white;
+    caret-color: white;
+    color: white;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 -1px 10px 3px rgba(255, 255, 255, 0.2);
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+
+img.footer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 20%;
+    opacity: 0.90;
+    z-index: -1;
+    position: absolute;
+}
+
+.attribute {
+    font-size: 15px;
+    line-height: initial;
+}
