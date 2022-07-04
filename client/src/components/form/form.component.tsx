@@ -47,7 +47,7 @@ export default function Form() {
                         }
 
                         let data = { name, email, subject, content };
-                        let target = process.env.DEBUG ? "http://127.0.0.1:8080" : "http://ec2-35-176-252-57.eu-west-2.compute.amazonaws.com/";
+                        let target = process.env.DEBUG ? "http://127.0.0.1:8080" : "/";
                         fetch(target, {
                             method: 'POST',
                             body: JSON.stringify(data),
