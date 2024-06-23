@@ -37,5 +37,8 @@ jobs:
           path: ${{ github.workspace }}/server/public
           if-no-files-found: error
 
+      - name: Configure pages
+        uses: actions/configure-pages@v4
+
       - name: Deploy to Github Pages
         uses: actions/deploy-pages@v4
