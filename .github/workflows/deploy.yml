@@ -28,12 +28,11 @@ jobs:
           cd ${GITHUB_WORKSPACE}/client
           npm install
           npm start
-          ls -alh ${GITHUB_WORKSPACE}/server/public
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ${GITHUB_WORKSPACE}/server/public
+          path: ${{ github.workspace }}/server/public
           if-no-files-found: error
 
       - name: Deploy to Github Pages
