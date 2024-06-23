@@ -28,6 +28,7 @@ jobs:
           cd ${GITHUB_WORKSPACE}/client
           npm install
           npm start
+          ls -alh ${GITHUB_WORKSPACE}/server/public
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
