@@ -23,9 +23,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Build webpack
         run: |
           cd ${GITHUB_WORKSPACE}/client
           npm install
-          npm run deploy
+          npm start
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: ${GITHUB_WORKSPACE}/server/public
+          if-no-files-found: error
+
+      - name: Deploy to Github Pages
+        uses: actions/deploy-pages@v4
