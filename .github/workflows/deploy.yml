@@ -35,5 +35,14 @@ jobs:
           path: ${{ github.workspace }}/server/public
           if-no-files-found: error
 
-      - name: Deploy to Github Pages
-        uses: actions/deploy-pages@v4
+  jobs:
+    deploy:
+      needs: build
+      permissions:
+        pages: write
+        id-token: write
+
+      runs-on: ubuntu-latest
+      steps:
+        - name: Deploy to Github Pages
+          uses: actions/deploy-pages@v4
