@@ -37,11 +37,11 @@ jobs:
           npm start
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           path: ${{ github.workspace }}/server/public
           if-no-files-found: error
 
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
